@@ -1,8 +1,7 @@
-var CACHE_NAME = 'my-site-cache-v2.5';
+var CACHE_NAME = 'my-site-cache-v3';
 var urlsToCache = [
   '/img/',
-  '/css/',
-  '/js/'
+  '/css/'
 ];
 
 self.addEventListener('install', function (event) {

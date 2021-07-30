@@ -117,6 +117,9 @@
              case "rgb(255, 0, 0)":
                  numVermell++;
                  break;
+             case "rgb(165, 0, 0)":
+                 numVermell++;
+                 break;
              case "rgb(128, 128, 128)":
                  numGris++;
                  break;
