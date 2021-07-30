@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="App Bombers Generalitat">
+    <meta name="author" content="Albert Anguela">
+    <link rel="manifest" href="/config.webmanifest">
+
+    <title>Bombers de la Generalitat</title>
+    <link rel="shortcut icon" href="../img/icono.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <meta name="theme-color" content="#801100">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="apple-mobile-web-app-title" content="AppBombers">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-title" content="AppBombers">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1" />
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-light justify-content-center" style="background-color: #801100;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="../"><i class="fa fa-home"></i> Inici</a>
+            <span class="navbar-brand mb-0 "><img alt="Distintiu" src="../img/distintiu.png" /></span>
+            <span class="navbar-text text-light">Afectació Hab.</span>
+        </div>
+    </nav>
+
+    <br>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-10 col-md-5 comptador">
+                <table class="table table-hover table-bordered table-sm">
+                    <tbody>
+                        <tr>
+
+                            <th scope="col">Confinats</th>
+                            <td class="comptar text-center" id="comptarConfi">0</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Evacuats / Afectació</th>
+                            <td class="comptar text-center" id="comptarFum">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 col-md-9 col-lg-5 shadow-sm edifici">
+                <button id="masPisito" type="button" class="btn btn-primary btn-circle"><i class="fa fa-plus"></i></button>
+                <button id="reloadPage" type="button" class="btn btn-primary btn-circle-2 rotate"><i class="fa fa-refresh"></i></button>
+                <br>
+                <div class="pisito row justify-content-around">
+                    <div class="floorplant col-2">
+                        6e 1a
+                    </div>
+                    <div class="floorplant col-2">
+                        6e 2a
+                    </div>
+                    <div class="floorplant col-2">
+                        6e 3a
+                    </div>
+                    <div class="floorplant col-2">
+                        6e 4a
+                    </div>
+                    <div class="floorplant col-2">
+                        6e 5a
+                    </div>
+                    <div class="floorplant col-2">
+                        6e 6a
+                    </div>
+                </div>
+                <div class="pisito row justify-content-around">
+                    <div class="floorplant col-2">
+                        5e 1a
+                    </div>
+                    <div class="floorplant col-2">
+                        5e 2a
+                    </div>
+                    <div class="floorplant col-2">
+                        5e 3a
+                    </div>
+                    <div class="floorplant col-2">
+                        5e 4a
+                    </div>
+                    <div class="floorplant col-2">
+                        5e 5a
+                    </div>
+                    <div class="floorplant col-2">
+                        5e 6a
+                    </div>
+                </div>
+                <div class="pisito row justify-content-around">
+                    <div class="floorplant col-2">
+                        4t 1a
+                    </div>
+                    <div class="floorplant col-2">
+                        4t 2a
+                    </div>
+                    <div class="floorplant col-2">
+                        4t 3a
+                    </div>
+                    <div class="floorplant col-2">
+                        4t 4a
+                    </div>
+                    <div class="floorplant col-2">
+                        4t 5a
+                    </div>
+                    <div class="floorplant col-2">
+                        4t 6a
+                    </div>
+                </div>
+                <div class="pisito row justify-content-around">
+                    <div class="floorplant col-2">
+                        3r 1a
+                    </div>
+                    <div class="floorplant col-2">
+                        3r 2a
+                    </div>
+                    <div class="floorplant col-2">
+                        3r 3a
+                    </div>
+                    <div class="floorplant col-2">
+                        3r 4a
+                    </div>
+                    <div class="floorplant col-2">
+                        3r 5a
+                    </div>
+                    <div class="floorplant col-2">
+                        3r 6a
+                    </div>
+                </div>
+                <div class="pisito row justify-content-around">
+                    <div class="floorplant col-2">
+                        2n 1a
+                    </div>
+                    <div class="floorplant col-2">
+                        2n 2a
+                    </div>
+                    <div class="floorplant col-2">
+                        2n 3a
+                    </div>
+                    <div class="floorplant col-2">
+                        2n 4a
+                    </div>
+                    <div class="floorplant col-2">
+                        2n 5a
+                    </div>
+                    <div class="floorplant col-2">
+                        2n 6a
+                    </div>
+                </div>
+                <div class="pisito row justify-content-around">
+                    <div class="floorplant col-2">
+                        1r 1a
+                    </div>
+                    <div class="floorplant col-2">
+                        1r 2a
+                    </div>
+                    <div class="floorplant col-2">
+                        1r 3a
+                    </div>
+                    <div class="floorplant col-2">
+                        1r 4a
+                    </div>
+                    <div class="floorplant col-2">
+                        1r 5a
+                    </div>
+                    <div class="floorplant col-2">
+                        1r 6a
+                    </div>
+                </div>
+                <div class="pisito row justify-content-around">
+                    <div class="floorplant col-2">
+                        PB 1a
+                    </div>
+                    <div class="floorplant col-2">
+                        PB 2a
+                    </div>
+                    <div class="floorplant col-2">
+                        PB 3a
+                    </div>
+                    <div class="floorplant col-2">
+                        PB 4a
+                    </div>
+                    <div class="floorplant col-2">
+                        PB 5a
+                    </div>
+                    <div class="floorplant col-2">
+                        PB 6a
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <h5 style="margin-left:20px;">Gestió d'instal·lacions</h5>
+        </div>
+        <div class="row justify-content-around">
+            <div class="checkbox">
+                <label><input type="checkbox" value=""> Aigua</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value=""> Gas</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value=""> Electricitat</label>
+            </div>
+        </div>
+        <br>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="triaOpcions" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Planta - Pis #</h5>
+                </div>
+                <div class="modal-body" style="padding-left: 30px;">
+                    <div class="row justify-content-around">
+                        <div id="codiVacio" class="color col-3 text-center" style="background-color: whitesmoke;">
+                            &empty;
+                        </div>
+                        <div class="col-9 acompanyacodi"> - Buit / Sense Accés
+                        </div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <div id="codiConf" class="color col-3 text-center" style="background-color: darkseagreen;">
+                            C
+                        </div>
+                        <div class="col-9 acompanyacodi"> - Confinat
+                        </div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <div id="codiEvFum" class="color col-3 text-center" style="background-color: grey;">
+                            E
+                        </div>
+                        <div class="col-9 acompanyacodi"> - Evacuat / Afectació Fum
+                        </div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <div id="codiEvFoc" class="color col-3 text-center" style="background-color: red;">
+                            E
+                        </div>
+                        <div class="col-9 acompanyacodi"> - Evacuat / Afectació Foc
+                        </div>
+                    </div>
+                    <div id="filaColorInici" class="row justify-content-around">
+                        <div id="codiIniciFoc" class="color col-3 text-center" style="background-color: rgb(165, 0, 0);">
+                            X
+                        </div>
+                        <div class="col-9 acompanyacodi"> - Inici de l'incident
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="./js/js.js"></script>
+</body>
+
+</html>

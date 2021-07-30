@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="App Bombers Generalitat">
+    <meta name="author" content="Albert Anguela">
+    <link rel="manifest" href="/config.webmanifest">
+
+    <title>Bombers de la Generalitat</title>
+    <link rel="shortcut icon" href="favicon/android-icon-144x144.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <meta name="theme-color" content="#801100">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="apple-mobile-web-app-title" content="AppBombers">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-title" content="AppBombers">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="favicon/apple-icon-180x180.png">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1" />
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-light  justify-content-center" style="background-color: #801100;">
+        <span class="navbar-brand mb-0 h1 text-light">App Bombers Gencat</span>
+        <span class="navbar-brand mb-0 h1"><img alt="Distintiu" src="img/distintiu.png" /></span>
+    </nav>
+    <br>
+    <div class="container ">
+        <div class="row justify-content-around">
+            <div class="col-sm-9 col-md-6 col-lg-4">
+                <img src="img/habitatge.jpg" alt="Afectacio" style="width: 100%">
+                <button class="btn habitatge" onclick="window.location='afectaciohabitatge/index.html'"><i class="fa fa-building" aria-hidden="true"></i> Afectació Habitatge</button>
+            </div>
+        </div><br>
+        <div class="row justify-content-around">
+            <div class="col-sm-9 col-md-6 col-lg-4">
+                <img src="img/triatge.jpg" alt="Triatge" style="width: 100%">
+                <button class="btn triatge" onclick="window.location='triatgestart/index.html'"><i class="fa fa-medkit" aria-hidden="true"></i> Triatge Start</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="./js/js.js"></script>
+</body>
+
+</html>

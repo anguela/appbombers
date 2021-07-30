@@ -1,0 +1,33 @@
+{
+  "dir": "ltr",
+  "lang": "ca",
+  "name": "Bombers de la Generalitat",
+  "short_name": "AppBombers",
+  "scope": "/",
+  "display": "standalone",
+  "start_url": "/",
+  "background_color": "#801100",
+  "theme_color": "black",
+  "description": "Aplicacions Bombers de la Generalitat",
+  "orientation": "portrait",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "https://appbombers.site/favicon/android-icon-48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    }, 
+    {
+      "src": "https://appbombers.site/img/icono.jpg",
+      "type": "image/jpeg",
+      "sizes": "400x400"
+    },
+    {
+      "src": "https://appbombers.site/favicon/icono512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+  }

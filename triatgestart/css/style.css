@@ -1,0 +1,120 @@
+.starter-template {
+    text-align: center;
+}
+
+.bus {
+    border: 4px solid #777;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+
+.seient {
+    font-weight: bold;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 10px;
+    text-align: center;
+    border: 3px solid #555;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.seient:hover {
+    background-color: #ccc !important;
+}
+
+.wc {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 2px;
+    padding-top: 5px;
+}
+
+.porta {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 2px;
+    padding-top: 5px;
+}
+
+.primerafila {
+    margin-bottom: 10px;
+}
+
+.color {
+    height: 50px;
+    width: 50px;
+    border-radius: 4px;
+    border: 1px solid #555;
+}
+
+.navbar img {
+    height: 2em;
+}
+
+#colorAteses img {
+    height: 3em;
+}
+
+#colorAteses {
+    text-align: center;
+}
+
+tbody tr th,
+.comptar {
+    padding-top: 12px !important;
+}
+
+
+@media only screen and (max-width: 769px) {
+
+    .input-group {
+        max-width: 35vw;
+        margin-left: 3px;
+    }
+
+
+}
+
+@media only screen and (max-width: 359px) {
+
+    .seient,
+    .comptador,
+    .wc {
+        padding-left: 9px !important;
+    }
+
+    .porta {
+        font-size: 12px;
+        padding-left: 9px !important;
+        padding-top: 5px !important;
+    }
+}
+
+
+.btn-circle-2 {
+    border-radius: 25px;
+    text-align: center;
+    position: absolute;
+    top: -18px;
+    right: 2px;
+
+}
+
+.rotate {
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.rotate.down {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}

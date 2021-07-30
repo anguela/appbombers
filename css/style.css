@@ -1,0 +1,51 @@
+.starter-template {
+    text-align: center;
+}
+
+.navbar img {
+    height: 2em;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container img {
+    height: 150px;
+    width: 400px;
+    border-radius: 3px;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    width: 69% !important;
+}
+
+.container .btn.habitatge {
+    background-color: rgba(255, 0, 0, 0.85);
+}
+
+.container .btn.triatge {
+    background-color: rgba(0, 0, 255, 0.85);
+}
+
+.container .btn.habitatge:hover {
+    background-color: red;
+}
+
+.container .btn.triatge:hover {
+    background-color: blue;
+}
