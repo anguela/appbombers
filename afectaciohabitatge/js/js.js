@@ -128,7 +128,7 @@
      });
 
      $("#comptarFum").text(numGris);
-     $("#comptarFum").text(numVermell);
+     $("#comptarFoc").text(numVermell);
      $("#comptarConfi").text(numConfi);
 
      numVermell = 0;
