@@ -14,19 +14,8 @@
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "https://appbombers.site/img/icona48.png",
+      "src": "https://appbombers.site/img/icono.png",
       "type": "image/png",
-      "sizes": "48x48"
-    }, 
-    {
-      "src": "https://appbombers.site/img/icona.png",
-      "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "https://appbombers.site/img/icono.jpg",
-      "type": "image/jpeg",
       "sizes": "400x400"
     }
   ]
