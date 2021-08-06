@@ -21,11 +21,15 @@
 
 
  $(document).on('click', '.floorplant', function () {
-     // Si no ha estat assignat un codi mostra el Modal
-     codifloorplant = $(this).text();
-     console.log(codifloorplant);
-     if (codifloorplant != "∅" && codifloorplant != "E" && codifloorplant != "C" && codifloorplant != "X") {
-         numfloorplant = $(this).text();
+     numfloorplant = $(this).text();
+     index1 = numfloorplant.indexOf('-');
+     if (numfloorplant.substr(0, 1) != "X" && numfloorplant.substr(0, 1) != "∅") {
+
+         console.log(index1);
+         if (index1 != '-1')
+             numfloorplant = numfloorplant.substr(index1 + 1);
+
+         console.log(numfloorplant);
          $(".modal-title").text('Planta - Pis #' + numfloorplant);
          myModal.show();
      }
@@ -35,7 +39,6 @@
  $(".color").on('click', function (event) {
      colortriat = $(this).css("background-color");
      funcioComptar();
-     console.log(colortriat);
  });
 
  // Afegeix un pis més
@@ -84,25 +87,19 @@
          $("#filaColorInici").hide();
      } else if (colortriat == "rgb(143, 188, 143)") {
          $(".floorplant:contains('" + numfloorplant + "')").css("font-weight", "bold");
-         $(".floorplant:contains('" + numfloorplant + "')").html("C");
-         $(".floorplant:contains('" + numfloorplant + "')").hover(function () {
-             $(this).css("background-color", "rgb(143, 188, 143) !important");
-         });
-     } else if (colortriat == "rgb(143, 188, 143)") {
-         $(".floorplant:contains('" + numfloorplant + "')").css("font-weight", "bold");
-         $(".floorplant:contains('" + numfloorplant + "')").html("C");
+         // $(".floorplant:contains('" + numfloorplant + "')").html("C-" + numfloorplant);
          $(".floorplant:contains('" + numfloorplant + "')").hover(function () {
              $(this).css("background-color", "rgb(143, 188, 143) !important");
          });
      } else if (colortriat == "rgb(255, 0, 0)") {
          $(".floorplant:contains('" + numfloorplant + "')").css("font-weight", "bold");
-         $(".floorplant:contains('" + numfloorplant + "')").html("E");
+         //$(".floorplant:contains('" + numfloorplant + "')").html("E-" + numfloorplant);
          $(".floorplant:contains('" + numfloorplant + "')").hover(function () {
              $(this).css("background-color", "rgb(255, 0, 0) !important");
          });
      } else if (colortriat == "rgb(128, 128, 128)") {
          $(".floorplant:contains('" + numfloorplant + "')").css("font-weight", "bold");
-         $(".floorplant:contains('" + numfloorplant + "')").html("E");
+         //$(".floorplant:contains('" + numfloorplant + "')").html("E-" + numfloorplant);
          $(".floorplant:contains('" + numfloorplant + "')").hover(function () {
              $(this).css("background-color", "rgb(128, 128, 128) !important");
          });
